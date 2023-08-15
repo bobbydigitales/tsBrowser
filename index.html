@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat voice</title>
+
+    <style>
+        #queryText {
+            width:500px;
+            height:120px;
+        }
+
+        #output {
+            width:500px;
+            white-space:pre-wrap;
+        }
+    </style>
+<script src="./lib/typescript.js"></script>
+<script type="module" src="./main.js"></script>
+<script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+</head>
+<body>
+
+    <div id='content'>
+        <textarea id="queryText"  placeholder="Type your question here!"></textarea>
+        <input id="submitButton" type="button" value="Send">
+        <input id="listenButton" type="button" value="Listen">
+
+    </div>
+
+    <div>
+        <pre id='output'></pre>
+    </div>
+    
+</body>
+</html>
